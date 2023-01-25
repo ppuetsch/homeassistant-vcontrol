@@ -17,6 +17,11 @@ options:
   device_id: "2098"
   vcontrol_host: localhost
   vcontrol_port: 3002
+  mqtt_host: ""
+  mqtt_port: ""
+  mqtt_user: ""
+  mqtt_password: ""
+  mqtt_topic: "openv"
   debug: false
   commands:
     - getTempA:FLOAT
@@ -62,10 +67,15 @@ schema:
   device_id: "str"
   vcontrol_host: "str?"
   vcontrol_port: "int?"
+  mqtt_host: "str?"
+  mqtt_port: "int?"
+  mqtt_user: "str?"
+  mqtt_password: "str?"
+  mqtt_topic: "str?"
   debug: "bool?"
   commands:
     - "str"
-image: "alexandreio/{arch}-homeassistant-vcontrol"
+# image: "alexandreio/{arch}-homeassistant-vcontrol"
 usb: true
 apparmor: false
 ports:
