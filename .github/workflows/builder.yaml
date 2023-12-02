@@ -106,5 +106,5 @@ jobs:
             --${{ matrix.arch }} \
             --target /data/${{ matrix.addon }} \
             --image "${{ steps.check.outputs.image }}" \
-            --docker-hub "ghcr.io/ppuetsch" \
+            --docker-hub "ppuetsch" \
             --addon
